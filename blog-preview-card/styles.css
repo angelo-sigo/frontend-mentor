@@ -1,0 +1,122 @@
+@font-face {
+  font-family: Figtree, system-ui, -apple-system, sans-serif;
+  src:
+    local()
+    url('./assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+}
+
+:root {
+  --primary-color: #f4d04e;
+  --secondary-color: #111111;
+  --tertiary-color: #6b6b6b;
+  --background-color: #ffffff;
+
+  --base-font: Figtree, sans-serif, system-ui;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  min-height: 100dvh;
+  background-color: var(--primary-color);
+  font-family: var(--base-font);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 327px;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  border: 1px solid var(--secondary-color);
+  box-shadow: 8px 8px var(--secondary-color);
+  transition: all 200ms ease;
+}
+
+.card:hover {
+  transform: translate(-8px, -8px);
+  box-shadow: 16px 16px var(--secondary-color);
+}
+
+.card__banner {
+  width: 100%;
+  border-radius: 10px;
+  transition: scale 200ms ease;
+  z-index: 10;
+}
+
+.card__banner:hover {
+  scale: 1.05;
+}
+
+.card__content, .card__content > * {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: var(--secondary-color);
+  line-height: 1.5;
+}
+
+.category {
+  width: fit-content;
+  padding: 4px 12px;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+}
+
+.publish-date {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.title:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.sinopse {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--tertiary-color);
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 32px;
+  height: auto;
+}
+
+.name {
+  font-weight: 800;
+  font-size: 14px;
+}
