@@ -6,7 +6,7 @@ This is a solution for the [Blog Preview Card](https://www.frontendmentor.io/cha
 
 - **Solution URL:** [github.com/angelo-sigo/frontend-mentor/tree/main/blog-preview-card](https://github.com/angelo-sigo/frontend-mentor/tree/main/blog-preview-card)
 
-- **Live site URL:** [angelo-sigo.github.io/frontend-mentor/blog-preview-card](angelo-sigo.github.io/frontend-mentor/blog-preview-card)
+- **Live site URL:** [angelo-sigo.github.io/frontend-mentor/blog-preview-card](https://angelo-sigo.github.io/frontend-mentor/blog-preview-card)
 
 ## Table of contents
 
