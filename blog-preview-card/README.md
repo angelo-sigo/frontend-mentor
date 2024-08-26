@@ -4,7 +4,7 @@
 
 This is a solution for the [Blog Preview Card](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS) challenge from Frontend Mentor.
 
-- **Solution URL:** [github.com/angelo-sigo/frontend-mentor/tree/main/blog-preview-card](github.com/angelo-sigo/frontend-mentor/tree/main/blog-preview-card)
+- **Solution URL:** [github.com/angelo-sigo/frontend-mentor/tree/main/blog-preview-card](https://github.com/angelo-sigo/frontend-mentor/tree/main/blog-preview-card)
 
 - **Live site URL:** [angelo-sigo.github.io/frontend-mentor/blog-preview-card](angelo-sigo.github.io/frontend-mentor/blog-preview-card)
 
