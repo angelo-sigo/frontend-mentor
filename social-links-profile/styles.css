@@ -1,0 +1,156 @@
+@font-face {
+  font-family: Inter;
+  src:  local(Inter),
+        url('./assets/fonts/Inter.ttf') format('truetype');
+  font-weight: 100 900;
+}
+
+:root {
+  --darkest-grey: #141414;
+  --dark-grey: #1f1f1f;
+  --grey: #333333;
+  --green: #c5f82a;
+  --white: #ffffff;
+
+  font-family: Inter, Arial, sans-serif, system-ui;
+}
+
+* {
+  /* Reset default styles */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* Layout */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Sizing */
+  padding: 13px;
+  height: 100dvh;
+  /* Stylization */
+  background-color: var(--darkest-grey);
+}
+
+.card {
+  /* Layout */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  /* Sizing */
+  padding: 20px;
+  max-width: 510px;
+  /* Stylization */
+  background-color: var(--dark-grey);
+  color: var(--white);
+  border-radius: 10px;
+}
+
+.card__header {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  /* Sizing */
+  flex: 1 1 0;
+  /* Typography */
+  text-align: center;
+}
+
+.card__header .avatar {
+  /* Sizing */
+  width: 80px;
+  /* Stylization */
+  border-radius: 100px;
+}
+
+.card__header .details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__header .details > .name {
+  /* Typography */
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card__header .details > .location {
+  /* Stylization */
+  color: var(--green);
+  /* Typography */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.card__header .quote {
+  font-size: 12px;
+}
+
+.card__list {
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16px;
+  /* Sizing */
+  flex: 1 1 auto;
+  min-width: 254px;
+  /* Stylization */
+  list-style: none;
+}
+
+.card__list .list-item {
+  align-self: stretch;
+}
+
+.card__list .link {
+  /* Layout */
+  display: block;
+  /* Sizing */
+  width: 100%;
+  padding: 12px;
+  /* Stylization */
+  background-color: var(--grey);
+  color: var(--white);
+  border-radius: 8px;
+  /* Typography */
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: all 200ms ease;
+}
+
+.card__list > .list-item:hover > .link {
+  /* Stylization */
+  background-color: var(--green);
+  color: var(--grey);
+}
+
+@media screen and (min-height: 430px) {
+  .card__header {
+    flex-basis: 100%;
+  }
+
+  .card__header .details > .name {
+    font-size: 1.5rem;
+  }
+  
+  .card__header .details > .location,
+  .card__header .quote {
+    font-size: 0.875rem;
+  }
+
+  .card__list {
+    flex-basis: 100%;
+    font-size: 1rem;
+  }
+}
